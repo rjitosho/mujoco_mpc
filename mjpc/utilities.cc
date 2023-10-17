@@ -548,6 +548,7 @@ std::string GetExecutableDir() {
 
 // Returns the directory where tasks are stored
 static std::string GetTasksDir() {
+  return "C:/Users/riann/Documents/Stanford/research23/mujoco_mpc/mjpc/tasks";
   const char* tasks_dir = std::getenv("MJPC_TASKS_DIR");
   if (tasks_dir) {
     return tasks_dir;

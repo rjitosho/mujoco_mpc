@@ -62,6 +62,8 @@ add_library(
   tasks/quadrotor/quadrotor.h
   tasks/quadruped/quadruped.cc
   tasks/quadruped/quadruped.h
+  tasks/quadvine/quadvine.cc
+  tasks/quadvine/quadvine.h
   tasks/swimmer/swimmer.cc
   tasks/swimmer/swimmer.h
   tasks/walker/walker.cc
