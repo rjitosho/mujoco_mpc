@@ -90,8 +90,9 @@ void Quadvine::TransitionLocked(mjModel* model, mjData* data) {
     double geodesic_distance =
         1.0 - mju_abs(mju_dot(goal_orientation, orientation, 4));
 
-    double tolerance = 5.0e-1;
+    double tolerance = 5.0e-2;
     if (position_error_norm <= tolerance && geodesic_distance <= tolerance) {
+      std::cout << "goal reached with errors: " << position_error_norm << ", " << geodesic_distance << std::endl;
       // update task state
       current_mode_ += 1;
       if (current_mode_ == model->nkey) {
